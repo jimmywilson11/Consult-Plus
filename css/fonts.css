@@ -1,0 +1,36 @@
+/* Webfont: Lato Light */
+@font-face {
+    font-family: 'Lato Light';
+    src: url('../fonts/Lato-Light.eot'); 
+    src: url('../fonts/Lato-Light.eot?#iefix') format('embedded-opentype'), 
+         url('../fonts/Lato-Light.woff2') format('woff2'), 
+         url('../fonts/Lato-Light.woff') format('woff'), 
+         url('../fonts/Lato-Light.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+/* Webfont: Domine Regular */
+@font-face {
+    font-family: 'Domine Regular';
+    src: url('../fonts//Domine-Regular.eot');
+    src: url('../fonts/Domine-Regular.eot?#iefix') format('embedded-opentype'),  
+         url('../fonts/Domine-Regular.woff') format('woff'), 
+         url('../fonts/Domine-Regular.ttf')  format('truetype');
+        font-weight: normal;
+        font-style: normal;
+}
+/* Webfont: Montserrat Bold */
+@font-face {
+    font-family: "Montserrat Bold";
+    src: url("../fonts/Montserrat-Bold.otf");
+    font-weight: normal;
+    font-style: normal;
+}     
+/* Webfont: Montserrat Regular */
+@font-face {
+    font-family: "Montserrat Regular";
+    src: url("../fonts/Montserrat-Regular.otf");
+    font-weight: normal;
+    font-style: normal;
+}     
