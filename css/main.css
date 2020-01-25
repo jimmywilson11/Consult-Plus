@@ -582,9 +582,8 @@
   margin-top: 33px;
 }
 
-#contact-us .card-deck li {
-  border: 1px solid #E1EAEC;
-  padding: 30px;
+#contact-us .card-deck li img {
+  padding: 5px;
 }
 
 #contact-us .card-deck li span {
@@ -724,6 +723,10 @@ footer .copyright {
     left: 30%;
     top: 50%;
   }
+  .card-deck li {
+    padding: 30px;
+    border: 1px solid #E1EAEC;
+  }
 }
 
 @media (min-width: 1140px) {
@@ -752,6 +755,7 @@ footer .copyright {
     left: 20%;
   }
   .card-deck li {
-    width: 30%;
+    padding: 30px;
+    border: 1px solid #E1EAEC;
   }
 }
