@@ -34,17 +34,17 @@
   border-right: 1px solid #838B8C;
 }
 
-.navbar .nav-item .nav-link {
+.navbar-collapse .navbar-list .nav-item .nav-link {
   text-transform: uppercase;
   font: 400 14px Montserrat Bold, sans-serif;
   padding: 0 15px;
 }
 
-.navbar .nav-item .nav-link:hover {
+.navbar-collapse .navbar-list .nav-item .nav-link:hover {
   color: #FFAC56;
 }
 
-.navbar .nav-item .nav-link .active {
+.navbar-collapse .navbar-list .nav-item .active {
   color: #FFAC56;
 }
 
@@ -133,11 +133,29 @@
   transition: .4s ease all;
 }
 
+.arrow {
+  position: absolute;
+  z-index: 10;
+  width: 1%;
+  height: 10%;
+  background-color: #838B8C;
+  opacity: 1;
+  top: 45%;
+}
+
+.arrow:hover {
+  opacity: .8;
+}
+
+.arrow span {
+  color: #FFF;
+}
+
 #about {
   padding: 95px 0;
 }
 
-.about-description h2 {
+#about .about-description h2 {
   font: 700 14px Montserrat Regular, sans-serif;
   text-transform: uppercase;
   margin: 0;
@@ -145,20 +163,20 @@
   color: #838B8C;
 }
 
-.about-description span {
+#about .about-description span {
   text-transform: uppercase;
   font: 700 24px Montserrat Bold, sans-serif;
   letter-spacing: -0.7px;
 }
 
-.about-description p {
+#about .about-description p {
   margin: 20px 0;
   font: 400 15px Domine Regular, serif;
   line-height: 28px;
   color: #838B8C;
 }
 
-.about-description .btn {
+#about .about-description .btn {
   display: inline-block;
   font: 400 13px Montserrat Regular, sans-serif;
   text-transform: uppercase;
@@ -171,7 +189,7 @@
   border: 2px solid transparent;
 }
 
-.about-description .btn:hover {
+#about .about-description .btn:hover {
   border: 2px solid #16D428;
   color: #16D428;
   background-color: #FFF;
@@ -179,8 +197,7 @@
   transition: .4s ease all;
 }
 
-.badge {
-  position: absolute;
+#about .badge {
   max-width: 237px;
   padding: 18px;
   margin-top: 30px;
@@ -188,24 +205,22 @@
   color: #FFF;
   background-color: #03B6E7;
   border: 5px solid #FFF;
-  top: 50%;
-  left: 30%;
 }
 
-.badge img {
+#about .badge img {
   padding: 0 35px;
 }
 
-.badge .solid-wrapper {
+#about .badge .solid-wrapper {
   border: 1px solid #FFF;
 }
 
-.badge .solid-wrapper span {
+#about .badge .solid-wrapper span {
   font: 400 75px Montserrat Regular, sans-serif;
   letter-spacing: -3.75px;
 }
 
-.badge .solid-wrapper p {
+#about .badge .solid-wrapper p {
   font: 700 10px Montserrat Regular, sans-serif;
   padding-bottom: 10px;
   letter-spacing: 1px;
@@ -274,6 +289,94 @@
   color: #838B8C;
 }
 
+#feature-projects h3 {
+  font: 400 12px Montserrat Bold, sans-serif;
+  text-transform: uppercase;
+  color: #FFF;
+}
+
+#feature-projects h4 {
+  display: inline;
+  position: absolute;
+  padding: 5px 20px;
+  top: 5%;
+  left: 5%;
+  font: 400 12px Montserrat Bold, sans-serif;
+  text-transform: uppercase;
+  color: #FFF;
+  border: 2px solid #FFAC56;
+  border-radius: 25px;
+}
+
+#feature-projects p {
+  font: 400 15px Domine Regular, serif;
+  color: #FFF;
+}
+
+#feature-projects .project-item {
+  position: relative;
+}
+
+#feature-projects .project-item .project-corner {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 56px solid #00A6D3;
+  border-right: 56px solid transparent;
+  color: #FFF;
+  z-index: 5;
+}
+
+#feature-projects .project-item .project-corner:hover {
+  border-bottom-color: #FFAC56;
+  -webkit-transition: all .4s ease-in;
+  transition: all .4s ease-in;
+  cursor: pointer;
+}
+
+#feature-projects .project-item .project-corner i {
+  position: absolute;
+  bottom: -45px;
+  left: 10px;
+}
+
+#feature-projects .project-item .project-overlay {
+  position: absolute;
+  background-color: #FFAC56;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  z-index: -1;
+  color: #FFF;
+  text-align: center;
+}
+
+#feature-projects .project-item .none {
+  opacity: 1;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  z-index: 1;
+}
+
 #feature-projects span {
   font: 700 32px Montserrat Bold, sans-serif;
   text-transform: uppercase;
@@ -282,7 +385,7 @@
 
 #feature-projects .btn-2 {
   display: inline-block;
-  font: 400 13px Montserrat Regular, sans-serif;
+  font: 700 13px Montserrat Regular, sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   padding: 15px 25px;
@@ -319,6 +422,11 @@
   font: 700 32px Montserrat Bold, sans-serif;
   text-transform: uppercase;
   letter-spacing: -0.7px;
+}
+
+#testimonials p {
+  font: 400 15px Domine Regular, serif;
+  line-height: 28px;
 }
 
 #testimonials .testimonials-description {
@@ -358,10 +466,6 @@
   text-transform: uppercase;
 }
 
-#testimonials .carousel-indicators .indicator-item .title-wrapper p {
-  font: 400 15px Domine Regular, serif;
-}
-
 #testimonials .carousel-indicators .indicator-item img {
   max-width: 67px;
   max-height: 67px;
@@ -370,7 +474,7 @@
   border-radius: 50%;
 }
 
-#testimonials .carousel-indicators .indicator-item .pagination li {
+#testimonials .carousel-indicators .indicator-item .inner-pagination li {
   width: 15px;
   height: 15px;
   color: #FFF;
@@ -398,14 +502,62 @@
   letter-spacing: -0.7px;
 }
 
-#our-blog .nav .nav-link {
-  border: 2px solid;
-  border-radius: 25px;
+#our-blog .blog-items {
+  padding: 60px 0;
+  position: relative;
 }
 
-#our-blog .nav .nav-link .active {
-  border: 2px solid #FFAC56;
+#our-blog .blog-items .btns button {
+  font: 700 12px Montserrat Regular, sans-serif;
+  text-transform: uppercase;
+  padding: 12px 38px;
+  background-color: transparent;
+  border-style: none;
+  border: 2px solid #000;
   border-radius: 25px;
+  outline: none;
+}
+
+#our-blog .blog-items .btns button:hover {
+  border: 2px solid #FFAC56;
+  cursor: pointer;
+}
+
+#our-blog .blog-items .btns .active-button {
+  border: 2px solid #FFAC56;
+}
+
+#our-blog .blog-item a {
+  text-decoration: none;
+}
+
+#our-blog .blog-item a:hover {
+  color: #FFAC56;
+}
+
+#our-blog .blog-item time {
+  font: 400 15px Domine Regular, serif;
+  line-height: 28px;
+}
+
+#our-blog .blog-item span {
+  font: 400 15px Domine Regular, serif;
+  color: #16D428;
+}
+
+#our-blog .blog-item h4 {
+  font: 700 18px Montserrat Bold, sans-serif;
+  line-height: 33px;
+  text-transform: uppercase;
+}
+
+#our-blog .blog-item p {
+  font: 400 15px Domine Regular, serif;
+  line-height: 28px;
+}
+
+#our-blog .all-post {
+  display: none;
 }
 
 #contact-us {
@@ -428,6 +580,27 @@
 
 #contact-us .card-deck {
   margin-top: 33px;
+}
+
+#contact-us .card-deck li {
+  border: 1px solid #E1EAEC;
+  padding: 30px;
+}
+
+#contact-us .card-deck li span {
+  display: block;
+  font: 700 18px Montserrat Bold, sans-serif;
+  letter-spacing: -0.9px;
+}
+
+#contact-us .card-deck li a {
+  font: 400 18px Domine Regular, serif;
+  line-height: 28px;
+  text-decoration: none;
+}
+
+#contact-us .card-deck li a:hover {
+  color: #FFAC56;
 }
 
 footer {
@@ -469,9 +642,9 @@ footer .mailchimp input {
 footer .mailchimp .formEmailButton {
   position: absolute;
   right: 18%;
-  width: 120px;
+  width: 110px;
   background-color: #16D428;
-  padding: 15px 25px;
+  padding: 15px;
   border-style: none;
   color: #FFF;
   font: 700 13px Montserrat Bold, sans-serif;
@@ -502,11 +675,83 @@ footer .copyright {
   position: relative;
 }
 
-footer .copyright::before {
-  position: absolute;
-  content: '';
-  width: 100%;
-  height: 1px;
-  background-color: #838B8C;
-  margin-top: -10px;
+@media (min-width: 768px) {
+  .carousel-girls {
+    position: absolute;
+    z-index: -2;
+    top: 13%;
+  }
+  .carddeck {
+    margin-top: 15.4%;
+  }
+  .badge {
+    position: absolute;
+    left: 20%;
+    top: 40%;
+  }
+  .item {
+    width: 30%;
+  }
+}
+
+@media (min-width: 992px) {
+  .carousel-girls {
+    position: absolute;
+    z-index: -2;
+    top: 13%;
+  }
+  .carddeck {
+    margin-top: 15.4%;
+  }
+  .badge {
+    position: absolute;
+    left: 30%;
+    top: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .carousel-girls {
+    position: absolute;
+    z-index: -2;
+    top: 14%;
+  }
+  .carddeck {
+    margin-top: 15.4%;
+  }
+  .badge {
+    position: absolute;
+    left: 30%;
+    top: 50%;
+  }
+}
+
+@media (min-width: 1140px) {
+  .carousel-girls {
+    position: absolute;
+    z-index: -2;
+    top: 13%;
+  }
+  .carddeck {
+    margin-top: 15.6%;
+  }
+  .badge {
+    position: absolute;
+    left: 30%;
+    top: 50%;
+  }
+  .blog-img {
+    overflow: hidden;
+  }
+  .blog-items {
+    margin-left: calc((100vw - 1140px) / 2);
+  }
+  .blog-items .btns {
+    position: absolute;
+    top: 10%;
+    left: 20%;
+  }
+  .card-deck li {
+    width: 30%;
+  }
 }

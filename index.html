@@ -21,7 +21,7 @@
                     <p class="">Email: <a href="mailto:info@consultplus.com">info@consultplus.com</a></p>
                 </li>
                 <li class="phone mt-3 ml-2 pr-0">
-                    <p class="">Phone: <a href="tel: +9156856664555"> +91 5685 6664 555</a></p>
+                    <p class="">Phone: <a href="tel:+9156856664555"> +91 5685 6664 555</a></p>
                 </li>
             </ul>
         </div>
@@ -29,13 +29,13 @@
             <h1 class="site-title">
                 <a class="navbar-brand" aria-label="Site Logo" href="index.html">
                     <picture>
-
+                        <source srcset="./webp/logo.webp" type="image/webp">
                         <img src="./img/logo.png" alt="Site Logo">
                     </picture>
                 </a>
             </h1>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuburger"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="menuburger">
@@ -44,7 +44,7 @@
                         <a class="nav-link active" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About us</a>
+                        <a class="nav-link" href="#about">About us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Industry</a>
@@ -56,7 +56,7 @@
                         <a class="nav-link" href="#">Pages</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mr-md-0" href="#">Contact us</a>
+                        <a class="nav-link mr-md-0" href="#contact-us">Contact us</a>
                     </li>
                 </ul>
             </div>
@@ -64,7 +64,7 @@
     </header>
     <section id="banner">
         <div class="container">
-            <div class="carddeck col-lg-5 p-0">
+            <div class="carddeck col-md-8 col-lg-5 p-0">
                 <div class="headblock">
                     <h2>We are leading consulting company</h2>
                     <span>Choose your industry</span>
@@ -73,7 +73,8 @@
                     <li class="item">
                         <a href="#">
                             <picture>
-                                <img src="./img/icon_education.png" alt="">
+                                <source srcset="./webp/icon_education.webp" type="image/webp">
+                                <img src="./img/icon_education.png" alt="Industry Education Icon">
                             </picture>
                             <div class="title d-flex justify-content-between align-items-center">
                                 <h3>Education</h3>
@@ -84,7 +85,8 @@
                     <li class="item">
                         <a href="#">
                             <picture>
-                                <img src="./img/icon_business.png" alt="">
+                                <source srcset="./webp/icon_business.webp" type="image/webp">
+                                <img src="./img/icon_business.png" alt="Industry Business Icon">
                             </picture>
                             <div class="title d-flex justify-content-between align-items-center">
                                 <h3>Bussines</h3>
@@ -95,7 +97,8 @@
                     <li class="item">
                         <a href="#">
                             <picture>
-                                <img src="./img/icon_technology.png" alt="">
+                                <source srcset="./webp/icon_technology.webp" type="image/webp">
+                                <img src="./img/icon_technology.png" alt="Industry Technology Icon">
                             </picture>
                             <div class="title d-flex justify-content-between align-items-center">
                                 <h3>Technology</h3>
@@ -106,7 +109,8 @@
                     <li class="item">
                         <a href="#">
                             <picture>
-                                <img src="./img/icon_real_estate.png" alt="">
+                                <source srcset="./webp/icon_real_estate.webp" type="image/webp">
+                                <img src="./img/icon_real_estate.png" alt="Industry Real Estate Icon">
                             </picture>
                             <div class="title d-flex justify-content-between align-items-center">
                                 <h3>Real estate</h3>
@@ -117,7 +121,8 @@
                     <li class="item">
                         <a href="#">
                             <picture>
-                                <img src="./img/icon_banking.png" alt="">
+                                <source srcset="./webp/icon_banking.webp" type="image/webp">
+                                <img src="./img/icon_banking.png" alt="Industry Banking Icon">
                             </picture>
                             <div class="title d-flex justify-content-between align-items-center">
                                 <h3>Banking</h3>
@@ -131,7 +136,7 @@
                 </ul>
             </div>
         </div>
-        <div id="carousel" class="carousel slide m-auto" data-ride="carousel">
+        <div id="carousel" class="container-fluid carousel-girls slide m-auto d-none d-lg-block" data-ride="carousel">
             <a class="carousel-control-prev arrow" href="#carousel" role="button" aria-label="Prev" data-slide="prev">
                 <span class="fa fa-angle-left" aria-hidden="true"></span>
             </a>
@@ -141,17 +146,20 @@
             <div class="carousel-inner">
                 <div class="carousel-item active text-center">
                     <picture>
-                        <img class="image-fluid" src="./img/bg.jpg" alt="">
+                        <source srcset="./webp/bg.webp" type="image/webp">
+                        <img src="./img/bg.jpg" alt="First Backgroud Image">
                     </picture>
                 </div>
                 <div class="carousel-item text-center">
                     <picture>
-                        <img src="./img/bg-2.jpg" alt="">
+                        <source srcset="./webp/bg-2.webp" type="image/webp">
+                        <img src="./img/bg-2.jpg" alt="Second Backgroud Image">
                     </picture>
                 </div>
                 <div class="carousel-item text-center">
                     <picture>
-                        <img src="./img/bg-3.jpg" alt="">
+                        <source srcset="./webp/bg-3.webp" type="image/webp">
+                        <img src="./img/bg-3.jpg" alt="Third Backgroud Image">
                     </picture>
                 </div>
             </div>
@@ -159,7 +167,7 @@
     </section>
     <section id="about">
         <div class="container row">
-            <div class="about-description col-12 col-md-6 text-center text-md-right">
+            <div class="about-description col-12 col-md-6 text-left text-md-right">
                 <h2>What we are</h2>
                 <span>About us</span>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
@@ -167,14 +175,17 @@
                     and scrambled</p>
                 <a class="btn mb-3" href="#">Read More</a>
             </div>
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 d-none d-md-block">
                 <picture>
-                    <img class="img-fluid mx-auto d-block" src="./img/about.png" alt="">
+                    <source srcset="./webp/about.webp" type="image/webp">
+                    <img class="img-fluid mx-auto d-block" src="./img/about.png" alt="About Us Picture">
                 </picture>
                 <div class="badge mx-auto">
                     <div class="solid-wrapper">
                         <picture>
-                            <img class="img-fluid mx-auto d-block mb-3" src="./img/badge_icon.png" alt="">
+                            <source srcset="./webp/badge_icon.webp" type="image/webp">
+                            <img class="img-fluid mx-auto d-block mb-3" src="./img/badge_icon.png"
+                                alt="25 Years Achievment">
                         </picture>
                         <span>25</span>
                         <p>year of excellence</p>
@@ -182,33 +193,37 @@
                 </div>
             </div>
         </div>
-        </div>
     </section>
     <section id="our-steps">
         <div class="container">
             <h2>Our</h2>
             <span>Steps</span>
             <ul class="deck row flex-wrap">
-                <li class="item col-lg-3">
+                <li class="item col-lg-3 text-center text-md-left">
                     <picture>
-                        <img src="./img/Icon_choose_industary.png" alt="">
+                        <source srcset="./webp/icon_choose_industary.webp" type="image/webp">
+                        <img src="./img/icon_choose_industary.png" alt="Choose Industry Icon">
                     </picture>
                     <h2>01</h2>
                     <h3>Choose your industry</h3>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
                         the industry.</p>
                 </li>
-                <li class="item col-lg-3">
+                <li class="item col-lg-3 text-center text-md-left">
                     <picture>
-                        <img src="./img/icon_choose_service.png" alt="">
+                        <source srcset="./webp/icon_choose_service.webp" type="image/webp">
+                        <img src="./img/icon_choose_service.png" alt="Choose Service Icon">
                     </picture>
                     <h2>02</h2>
                     <h3>Choose your service</h3>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
                         the industry.</p>
                 </li>
-                <li class="item col-lg-3">
-                    <img src="./img/icon_boost_your_business.png" alt="">
+                <li class="item col-lg-3 text-center text-md-left">
+                    <picture>
+                        <source srcset="./webp/icon_boost_your_business.webp" type="image/webp">
+                        <img src="./img/icon_boost_your_business.png" alt="Business Boost Icon">
+                    </picture>
                     <div class="item-description">
                         <h2>03</h2>
                         <h3>Boost your business</h3>
@@ -223,7 +238,71 @@
         <div class="container">
             <h2>Featured</h2>
             <span>Projects</span>
-            <a class="btn-2" href="#">Full Projects</a>
+            <div class="row mb-4">
+                <ul class="col-12 col-md-6 mt-5">
+                    <li class="mb-3 mb-xl-0 project-item">
+                        <picture>
+                            <source srcset="./webp/banking.webp" type="image/webp">
+                            <img src="./img/banking.png" alt="Banking Industry Picture"
+                                class="img-fluid mx-auto d-block">
+                        </picture>
+                        <h4>Banking</h4>
+                        <div class="project-corner project-banking-corner">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="project-overlay project-banking-overlay">
+                            <h3>Banking</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and...</p>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="col-12 col-md-6 mt-1 mt-md-5 d-flex flex-wrap justify-content-between">
+                    <li class="project-item project-education mb-3 mb-xl-0 mx-auto mx-xl-0">
+                        <picture>
+                            <source srcset="./webp/education.webp" type="image/webp">
+                            <img src="./img/education.png" alt="Education" class="img-fluid mx-auto h-100">
+                        </picture>
+                        <h4>Education</h4>
+                        <div class="project-corner project-education-corner">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="project-overlay project-education-overlay">
+                            <h3>Education</h3>
+                            <p class="w-75">Lorem Ipsum is simply dummy text of the printing and...</p>
+                        </div>
+                    </li>
+                    <li class="project-item project-technology mb-3 mb-xl-0 mx-auto mx-xl-0">
+                        <picture>
+                            <source srcset="./webp/technology.webp" type="image/webp">
+                            <img src="./img/technology.png" alt="Technology Industry Picture"
+                                class="img-fluid mx-auto h-100">
+                        </picture>
+                        <h4>Technology</h4>
+                        <div class="project-corner project-technology-corner">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="project-overlay project-technology-overlay">
+                            <h3>Technology</h3>
+                            <p class="w-75">Lorem Ipsum is simply dummy text of the printing and...</p>
+                        </div>
+                    </li>
+                    <li class="project-item align-self-end mx-auto">
+                        <picture>
+                            <source srcset="./webp/estate.webp" type="image/webp">
+                            <img src="./img/estate.png" alt="Real estate" class="img-fluid mx-auto d-block">
+                        </picture>
+                        <h4>Real estate</h4>
+                        <div class="project-corner project-estate-corner">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="project-overlay project-estate-overlay">
+                            <h3>Real estate</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and...</p>
+                        </div>
+                    </li>
+                </ul>
+                <a href="#" class="btn-2 mx-auto mt-4">Full Projects</a>
+            </div>
         </div>
     </section>
     <section id="testimonials">
@@ -235,7 +314,8 @@
                     <li class="carousel-item active">
                         <div class="testimonials-description d-flex justify-content-between">
                             <picture>
-                                <img src="./img/icon_quote_l.png" alt="" class="d-none d-xl-block">
+                                <source srcset="./webp/icon_quote_l.webp" type="image/webp">
+                                <img src="./img/icon_quote_l.png" alt="Left Quote Icon" class="d-none d-xl-block">
                             </picture>
                             <p class="w-75 mb-5">
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
@@ -245,14 +325,16 @@
                                 remaining essentially.
                             </p>
                             <picture>
-                                <img src="./img/icon_quote_r.png" alt="" class="d-none d-xl-block">
+                                <source srcset="./webp/icon_quote_r.webp" type="image/webp">
+                                <img src="./img/icon_quote_r.png" alt="Right Quote Icon" class="d-none d-xl-block">
                             </picture>
                         </div>
                     </li>
                     <li class="carousel-item">
                         <div class="testimonials-description d-flex justify-content-between">
                             <picture>
-                                <img src="./img/icon_quote_l.png" alt="" class="d-none d-xl-block">
+                                <source srcset="./webp/icon_quote_l.webp" type="image/webp">
+                                <img src="./img/icon_quote_l.png" alt="Left Quote Icon" class="d-none d-xl-block">
                             </picture>
                             <p class="w-75 mb-5">
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
@@ -262,14 +344,16 @@
                                 remaining essentially.
                             </p>
                             <picture>
-                                <img src="./img/icon_quote_r.png" alt="" class="d-none d-xl-block">
+                                <source srcset="./webp/icon_quote_r.webp" type="image/webp">
+                                <img src="./img/icon_quote_r.png" alt="Right Quote Icon" class="d-none d-xl-block">
                             </picture>
                         </div>
                     </li>
                     <li class="carousel-item">
                         <div class="testimonials-description d-flex justify-content-between">
                             <picture>
-                                <img src="./img/icon_quote_l.png" alt="" class="d-none d-xl-block">
+                                <source srcset="./webp/icon_quote_l.webp" type="image/webp">
+                                <img src="./img/icon_quote_l.png" alt="Left Quote Icon" class="d-none d-xl-block">
                             </picture>
                             <p class="w-75 mb-5">
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
@@ -279,7 +363,8 @@
                                 remaining essentially.
                             </p>
                             <picture>
-                                <img src="./img/icon_quote_r.png" alt="" class="d-none d-xl-block">
+                                <source srcset="./webp/icon_quote_r.webp" type="image/webp">
+                                <img src="./img/icon_quote_r.png" alt="Right Quote Icon" class="d-none d-xl-block">
                             </picture>
                         </div>
                     </li>
@@ -288,7 +373,8 @@
                     <li data-target="#separate-slider" data-slide-to="0"
                         class="active indicator-item d-md-flex align-items-center">
                         <picture>
-                            <img src="./img/client_1.png" alt="Photo client" class="mr-md-4">
+                            <source srcset="./webp/client_1.webp" type="image/webp">
+                            <img src="./img/client_1.png" alt="Client Photo 1" class="mr-md-4">
                         </picture>
                         <div class="title-wrapper col pt-2">
                             <h3>Client Name</h3>
@@ -298,7 +384,8 @@
                     <li data-target="#separate-slider" data-slide-to="1"
                         class="indicator-item d-md-flex align-items-center">
                         <picture>
-                            <img src="./img/client_2.png" alt="Photo client" class="mr-md-4">
+                            <source srcset="./webp/client_2.webp" type="image/webp">
+                            <img src="./img/client_2.png" alt="Client Photo 2" class="mr-md-4">
                         </picture>
                         <div class="title-wrapper col pt-2">
                             <h3>Client Name</h3>
@@ -308,16 +395,17 @@
                     <li data-target="#separate-slider" data-slide-to="2"
                         class="indicator-item d-md-flex align-items-center">
                         <picture>
-                            <img src="./img/client_3.png" alt="Photo client" class="mr-md-4">
+                            <source srcset="./webp/client_3.webp" type="image/webp">
+                            <img src="./img/client_3.png" alt="Client Photo 3" class="mr-md-4">
                         </picture>
                         <div class="title-wrapper col pt-2">
                             <h3>Client Name</h3>
                             <p>Designation</p>
                         </div>
                     </li>
-                    <li class="indicator-item active">
-                        <ul class="carousel-indicators pagination">
-                            <li data-target="#separate-slider" data-slide-to="0" class="active"></li>
+                    <li class="indicator-item last-indicator d-none d-lg-flex active">
+                        <ul class="carousel-indicators inner-pagination">
+                            <li data-target="#separate-slider" data-slide-to="0"></li>
                             <li data-target="#separate-slider" data-slide-to="1"></li>
                             <li data-target="#separate-slider" data-slide-to="2"></li>
                         </ul>
@@ -328,40 +416,133 @@
     </section>
     <section id="our-blog">
         <div class="container-fluid d-flex flex-wrap">
-            <div class="col col-lg-6">
+            <div class="col-12 col-lg-4 blog-items text-lg-left">
+                <h2 class="section-title mb-0 ml-3 ml-xl-0 mr-xl-5">Our Blog</h2>
+                <span class="mb-3 ml-3 ml-xl-0">News</span>
+                <div
+                    class="btns d-flex flex-column flex-md-row align-items-center align-items-md-end text-center flex-wrap justify-content-center justify-content-xl-start mb-4">
+                    <button class="my-2 my-md-0 mx-md-2 active-button" id="top-post-btn">Top posts</button>
+                    <button class="my-2 my-md-0 mx-md-2" id="all-post-btn">Check all post</button>
+                </div>
+                <ul class="top-post mt-3 ml-3 ml-md-0 px-md-5 pl-xl-0 pr-xl-4">
+                    <li class="blog-item mb-5">
+                        <time datetime="2016-02-20">February <span class="green">20, 2016</span></time>
+                        <a href="#">
+                            <h4>Blog Heading here Business</h4>
+                        </a>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry...</p>
+                    </li>
+                    <li class="blog-item mb-5">
+                        <time datetime="2016-02-22">February 22, 2016</time>
+                        <a href="#">
+                            <h4>Many variations of passages of Ipsum</h4>
+                        </a>
+                        <p>Established fact that a reader will be distracted by the
+                            readable
+                            of a page when looking at its layout. The point of using Lorem...
+                            Ipsum is that </p>
+                    </li>
+                    <li class="blog-item">
+                        <time datetime="2016-02-25">February 25, 2016 </time>
+                        <a href="#">
+                            <h4>Internet tend to repeat predefined</h4>
+                        </a>
+                        <p class="blog-description">Popularised in the 1960s with the release of Letraset sheets
+                            containing Lorem Ipsum passages...</p>
+                    </li>
+                </ul>
+                <ul class="all-post px-md-5 pl-xl-0 pr-xl-4">
+                    <li class="blog-item mb-5">
+                        <time datetime="2016-02-20">February 20, 2016</time>
+                        <a href="#">
+                            <h4>Blog Heading here Business</h4>
+                        </a>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry...</p>
+                    </li>
+                    <li class="blog-item mb-5">
+                        <time datetime="2016-02-22">February 22, 2016</time>
+                        <a href="#">
+                            <h4>Many variations of passages of Ipsum</h4>
+                        </a>
+                        <p>Established fact that a reader will be distracted by the
+                            readable
+                            of a page when looking at its layout. The point of using Lorem...
+                            Ipsum is that </p>
+                    </li>
+                    <li class="blog-item">
+                        <time datetime="2016-02-25">February 25, 2016 </time>
+                        <a href="#">
+                            <h4>Internet tend to repeat predefined</h4>
+                        </a>
+                        <p class="blog-description">Popularised in the 1960s with the release of Letraset sheets
+                            containing Lorem Ipsum passages...</p>
+                    </li>
+                    <li class="blog-item mb-5">
+                        <time datetime="2016-02-20">February 20, 2016</time>
+                        <a href="#">
+                            <h4>Blog Heading here Business</h4>
+                        </a>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry...</p>
+                    </li>
+                    <li class="blog-item mb-5">
+                        <time datetime="2016-02-22">February 22, 2016</time>
+                        <a href="#">
+                            <h4>Many variations of passages of Ipsum</h4>
+                        </a>
+                        <p>Established fact that a reader will be distracted by the
+                            readable
+                            of a page when looking at its layout. The point of using Lorem...
+                            Ipsum is that </p>
+                    </li>
+                    <li class="blog-item">
+                        <time datetime="2016-02-25">February 25, 2016 </time>
+                        <a href="#">
+                            <h4>Internet tend to repeat predefined</h4>
+                        </a>
+                        <p class="blog-description">Popularised in the 1960s with the release of Letraset sheets
+                            containing Lorem Ipsum passages...</p>
+                    </li>
+                </ul>
             </div>
-            <picture>
-                <img class="img-fluid" src="./img/blog-image.png" alt="">
-            </picture>
+            <div class="pic d-none d-lg-block col-lg-6 p-0">
+                <picture>
+                    <source srcset="./webp/blog-image.webp" type="image/webp">
+                    <img class="img-fluid" src="./img/blog-image.png" alt="Blog Image">
+                </picture>
+            </div>
         </div>
-
-
     </section>
     <section id="contact-us">
         <div class="container">
             <h2>For Consulting</h2>
             <span>Contact us</span>
-            <ul class="card-deck">
-                <li class="card">
+            <ul class="card-deck d-flex flex-column flex-lg-row">
+                <li class="d-md-flex align-items-start mx-auto text-center mb-3">
                     <picture>
-                        <img class="d-block" src="./img/icon_email.png" alt="">
+                        <source srcset="./webp/icon_email.webp" type="image/webp">
+                        <img class="d-block" src="./img/icon_email.png" alt="Email Icon">
                     </picture>
-                    <span>Email </span>
-                    <a href="mailto:info@consultplus.com">info@consultplus.com</a>
+                    <p class="ml-md-4"><span class="d-block">Email</span>
+                    <a href="mailto:info@consultplus.com">info@consultplus.com</a></p>
                 </li>
-                <li class="card">
+                <li class="d-md-flex align-items-center mx-auto text-center mb-3">
                     <picture>
-                        <img class="d-block" src="./img/icon_call.png" alt="">
+                        <source srcset="./webp/icon_call.webp" type="image/webp">
+                        <img class="d-block" src="./img/icon_call.png" alt="Call Us Icon">
                     </picture>
-                    <span>Call Us </span>
-                    <a href="tel:+9188798767990">+91 8879 8767 990</a>
+                    <p class="ml-md-5"><span class="d-block">Call Us</span>
+                    <a href="tel:+9188798767990">+91 8879 8767 990</a></p>
                 </li>
-                <li class="card">
+                <li class="d-md-flex align-items-center mx-auto text-center mb-3">
                     <picture>
-                        <img class="d-block" src="./img/icon_career.png" alt="">
+                        <source srcset="./webp/icon_career.webp" type="image/webp">
+                        <img class="d-block" src="./img/icon_career.png" alt="Career Icon">
                     </picture>
-                    <span>Career </span>
-                    <a href="mailto:consult@career.com">consult@career.com</a>
+                    <p class="ml-md-4"><span class="d-block">Call Us</span>
+                    <a href="mailto:info@consultplus.com">consult@career.com</a></p>
                 </li>
             </ul>
         </div>
@@ -373,17 +554,17 @@
                     <h2>News Letter</h2>
                     <p class="w-75">Enter your email address to subscribe our notification
                         of our new post & features by email.</p>
-                    <form class="mailchimp d-flex" action="https://gmail.us4.list-manage.com/subscribe/post"
+                    <form class="mailchimp row d-flex" action="https://gmail.us4.list-manage.com/subscribe/post"
                         method="POST">
                         <input type="hidden" name="u" value="219558500c7fe6af6c9360caf">
                         <input type="hidden" name="id" value="c9e259e058">
-                        <input type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0"
-                            placeholder="Email Address" value="">
+                        <input type="email" autocapitalize="off" name="MERGE0" id="MERGE0"
+                            class="ml-3" placeholder="Email Address" value="">
                         <input type="submit" class="formEmailButton" name="submit" value="Subscribe">
                     </form>
                 </div>
-                <div class="links col-lg-6 d-flex flex-wrap">
-                    <ul class="navigation col-12 col-lg-4">
+                <div class="links col-lg-6 d-flex flex-wrap mb-3">
+                    <ul class="navigation col-12 col-md-4 text-center text-md-left">
                         <li class="nav-title">
                             <h2>Navigation</h2>
                         </li>
@@ -394,7 +575,7 @@
                         <li class="nav-item"><a href="#">Pages</a></li>
                         <li class="nav-item"><a href="#">Contact Us</a></li>
                     </ul>
-                    <ul class="industary col-12 col-lg-4">
+                    <ul class="industary col-12 col-md-4 text-center text-md-left">
                         <li class="industary-title">
                             <h2>Industary</h2>
                         </li>
@@ -406,7 +587,7 @@
                         <li class="industry-item"><a href="#">Telecommunication</a></li>
                         <li class="industry-item"><a href="#">Much more</a></li>
                     </ul>
-                    <ul class="social col-12 col-lg-4">
+                    <ul class="social col-12 col-md-4 text-center text-md-left">
                         <li class="social-title">
                             <h2>Social</h2>
                         </li>
@@ -418,7 +599,7 @@
                     </ul>
                 </div>
             </div>
-            <p class="copyright">Copyright &#169; 2016 Consultplus theme.</p>
+            <p class="copyright text-center text-md-left">Copyright &#169; 2016 Consultplus theme.</p>
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -431,6 +612,7 @@
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
     </script>
     <script src="https://kit.fontawesome.com/03c68ce9ed.js" crossorigin="anonymous"></script>
+    <script src="./script/main.js" defer></script>
 </body>
 
 </html>

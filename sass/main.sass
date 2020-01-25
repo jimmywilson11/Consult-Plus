@@ -22,18 +22,17 @@
                 color: $orange
     .mail
         border-right: 1px solid $gray
-      
-.navbar
-    .nav-item
-        .nav-link
-            text-transform: uppercase  
-            font: 400 14px $boldhead-font
-            padding: 0 15px
-            &:hover
-                color: $orange
+.navbar-collapse
+    .navbar-list
+        .nav-item
+            .nav-link
+                text-transform: uppercase  
+                font: 400 14px $boldhead-font
+                padding: 0 15px
+                &:hover
+                    color: $orange
             .active
-                color: $orange
-          
+                color: $orange         
 #banner 
     .carddeck
         .headblock
@@ -94,64 +93,72 @@
                     border: 2px solid $green
                     color: $green
                     background-color: $white
-                    transition: .4s ease all
+                    transition: .4s ease all   
+.arrow
+    position: absolute
+    z-index: 10
+    width: 1%
+    height: 10%
+    background-color: $gray
+    opacity: 1
+    top: 45%
+    &:hover
+        opacity: .8
+    span
+        color: $white
 #about
     padding: 95px 0
-.about-description
-    h2
-        font: 700 14px $head-font
-        text-transform: uppercase
-        margin: 0
-        letter-spacing: -0.7px
-        color: $gray
-    span
-        text-transform: uppercase
-        font: 700 24px $boldhead-font
-        letter-spacing: -0.7px
-    p
-        margin: 20px 0 
-        font: 400 15px $second-font
-        line-height: 28px
-        color: $gray
-    .btn
-        display: inline-block
-        font: 400 13px $head-font
-        text-transform: uppercase
-        padding: 15px 25px
-        letter-spacing: -0.13px
-        color: $white
-        background-color: $green
-        border-radius: 25px
-        outline: none
-        border: 2px solid transparent
-        &:hover
-            border: 2px solid $green
-            color: $green
-            background-color: $white
-            transition: .4s ease all
-.badge
-    position: absolute
-    max-width: 237px
-    padding: 18px 
-    margin-top: 30px
-    text-transform: uppercase
-    color: $white
-    background-color: $light-blue
-    border: 5px solid $white
-    top: 50%
-    left: 30%
-    img
-        padding: 0 35px 
-    .solid-wrapper
-        border: 1px solid $white
+    .about-description
+        h2
+            font: 700 14px $head-font
+            text-transform: uppercase
+            margin: 0
+            letter-spacing: -0.7px
+            color: $gray
         span
-            font: 400 75px $head-font
-            letter-spacing: -3.75px
+            text-transform: uppercase
+            font: 700 24px $boldhead-font
+            letter-spacing: -0.7px
         p
-            font: 700 10px $head-font
-            padding-bottom: 10px
-            letter-spacing: 1px     
-        
+            margin: 20px 0 
+            font: 400 15px $second-font
+            line-height: 28px
+            color: $gray
+        .btn
+            display: inline-block
+            font: 400 13px $head-font
+            text-transform: uppercase
+            padding: 15px 25px
+            letter-spacing: -0.13px
+            color: $white
+            background-color: $green
+            border-radius: 25px
+            outline: none
+            border: 2px solid transparent
+            &:hover
+                border: 2px solid $green
+                color: $green
+                background-color: $white
+                transition: .4s ease all
+    .badge
+        max-width: 237px
+        padding: 18px 
+        margin-top: 30px
+        text-transform: uppercase
+        color: $white
+        background-color: $light-blue
+        border: 5px solid $white
+        img
+            padding: 0 35px 
+        .solid-wrapper
+            border: 1px solid $white
+            span
+                font: 400 75px $head-font
+                letter-spacing: -3.75px
+            p
+                font: 700 10px $head-font
+                padding-bottom: 10px
+                letter-spacing: 1px            
 #our-steps
     background-color: $bgc
     padding: 95px 0
@@ -193,13 +200,71 @@
         padding: 0
         margin: 0
         color: $gray
+    h3
+        font: 400 12px $boldhead-font
+        text-transform: uppercase
+        color: $white
+    h4
+        display: inline
+        position: absolute
+        padding: 5px 20px
+        top: 5%
+        left: 5% 
+        font: 400 12px $boldhead-font
+        text-transform: uppercase
+        color: $white
+        border: 2px solid $orange
+        border-radius: 25px
+    p
+        font: 400 15px $second-font
+        color: $white
+    .project-item
+        position: relative
+        .project-corner
+            position: absolute
+            bottom: 0
+            left: 0
+            width: 0
+            height: 0
+            border-bottom: 56px solid $blue
+            border-right: 56px solid transparent
+            color: $white
+            z-index: 5
+            &:hover 
+                border-bottom-color: $orange
+                transition: all .4s ease-in
+                cursor: pointer
+            i
+                position: absolute
+                bottom: -45px
+                left: 10px
+        .project-overlay 
+            position: absolute
+            background-color: $orange
+            top: 0
+            right: 0
+            bottom: 0
+            left: 0
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            opacity: 0
+            transition: all 0.4s ease-in-out
+            z-index: -1
+            color: $white
+            text-align: center
+        .none
+            opacity: 1
+            transition: all 0.4s ease-in-out
+            z-index: 1
     span
         font: 700 32px $boldhead-font
         text-transform: uppercase
-        letter-spacing: -0.7px  
+        letter-spacing: -0.7px        
     .btn-2
         display: inline-block
-        font: 400 13px $head-font
+        font: 700 13px $head-font
         text-transform: uppercase
         text-decoration: none
         padding: 15px 25px
@@ -227,6 +292,9 @@
         font: 700 32px $boldhead-font
         text-transform: uppercase
         letter-spacing: -0.7px
+    p
+        font: 400 15px $second-font
+        line-height: 28px
     .testimonials-description
         position: relative
         padding-top: 57px
@@ -253,14 +321,12 @@
                 h3
                     font: 700 14px $boldhead-font
                     text-transform: uppercase
-                p
-                    font: 400 15px $second-font
             img
                 max-width: 67px
                 max-height: 67px
                 object-fit: cover
                 border-radius: 50%
-            .pagination
+            .inner-pagination
                 li
                     width: 15px
                     height: 15px
@@ -281,13 +347,44 @@
         font: 700 32px $boldhead-font
         text-transform: uppercase
         letter-spacing: -0.7px
-    .nav
-        .nav-link
-            border: 2px solid
-            border-radius: 25px 
-            .active
-                border: 2px solid $orange
+    .blog-items
+        padding: 60px 0
+        position: relative
+        .btns
+            button
+                font: 700 12px $head-font
+                text-transform: uppercase
+                padding: 12px 38px
+                background-color: transparent
+                border-style: none
+                border: 2px solid $black
                 border-radius: 25px
+                outline: none
+                &:hover
+                    border: 2px solid $orange
+                    cursor: pointer
+            .active-button
+                border: 2px solid $orange
+    .blog-item
+        a
+            text-decoration: none
+            &:hover
+                color: $orange
+        time
+            font: 400 15px $second-font
+            line-height: 28px
+        span
+            font: 400 15px $second-font
+            color: $green
+        h4
+            font: 700 18px $boldhead-font
+            line-height: 33px
+            text-transform: uppercase
+        p
+            font: 400 15px $second-font
+            line-height: 28px
+    .all-post
+        display: none       
 #contact-us
     padding: 95px 0
     h2
@@ -302,6 +399,19 @@
         letter-spacing: -0.7px
     .card-deck
         margin-top: 33px
+        li
+            border: 1px solid $border
+            padding: 30px     
+            span
+                display: block
+                font: 700 18px $boldhead-font 
+                letter-spacing: -0.9px
+            a
+                font: 400 18px $second-font
+                line-height: 28px
+                text-decoration: none
+                &:hover
+                    color: $orange
 footer
     background-color: $dark
     padding: 96px 0 56px 0
@@ -330,9 +440,9 @@ footer
         .formEmailButton
             position: absolute
             right: 18%
-            width: 120px
+            width: 110px
             background-color: $green
-            padding: 15px 25px
+            padding: 15px
             border-style: none
             color: $white
             font: 700 13px $boldhead-font
@@ -353,11 +463,61 @@ footer
     .copyright
         position: relative
         
-        &::before
+
+@media (min-width: 768px)
+    .carousel-girls
+        position: absolute
+        z-index: -2
+        top: 13%
+    .carddeck
+        margin-top: 15.4% 
+    .badge
+        position: absolute 
+        left: 20%
+        top: 40%
+    .item
+        width: 30%
+@media (min-width: 992px)
+    .carousel-girls
+        position: absolute
+        z-index: -2
+        top: 13%
+    .carddeck
+        margin-top: 15.4% 
+    .badge
+        position: absolute 
+        left: 30%
+        top: 50%
+@media (min-width: 1024px)
+    .carousel-girls
+        position: absolute
+        z-index: -2
+        top: 14%      
+    .carddeck
+        margin-top: 15.4% 
+    .badge
+        position: absolute 
+        left: 30%
+        top: 50%
+@media (min-width: 1140px)
+    .carousel-girls
+        position: absolute
+        z-index: -2
+        top: 13%
+    .carddeck
+        margin-top: 15.6% 
+    .badge
+        position: absolute 
+        left: 30%
+        top: 50%
+    .blog-img
+        overflow: hidden        
+    .blog-items
+        margin-left: calc((100vw - 1140px) / 2)
+        .btns
             position: absolute
-            content: ''
-            width: 100%
-            height: 1px
-            background-color: $gray
-            margin-top: -10px
-            
+            top: 10%
+            left: 20%
+    .card-deck
+        li
+            width: 30%
