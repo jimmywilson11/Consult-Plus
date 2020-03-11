@@ -1,0 +1,46 @@
+#title
+    background: url(../img/blog_bg.png)
+    background-repeat: norepeat
+    background-position: center center
+    background-size: cover
+#single-wrapper
+    .content-area
+        .site-main
+            .post-title
+                display: inline-block
+                font: 700 1.125rem $head-font
+                letter-spacing: -0.9px
+                background-color: $black
+                color: $white
+                padding: 15px   
+            .post-time
+                font: 700 0.9375rem $head-font
+                text-transform: uppercase
+                color: $white
+                background-color: $orange
+                padding: 5px 15px
+            .content
+                p
+                    font: 400 0.9375rem $second-font
+                    line-height: 28px
+                    color: $gray
+                ul
+                    margin: 2% 0 2% 20%
+                    li
+                        font: 400 0.9375rem $second-font
+                        line-height: 28px
+                        color: $gray
+                        &::before
+                            content: '\2714'
+                            margin: 0 5px
+        .post-item
+            .item-link
+                color: $black
+                &:hover
+                    opacity: .8
+            .item-title
+                font: 400 0.875rem $boldhead-font
+            .item-time
+                color: $orange
+                text-transform: uppercase
+                font: 400 0.75rem $boldhead-font

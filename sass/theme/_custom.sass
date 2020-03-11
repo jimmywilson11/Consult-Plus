@@ -1,0 +1,420 @@
+#banner 
+    .carddeck
+        .headblock
+            text-transform: uppercase
+            background-color: $orange
+            padding: 35px 40px
+            color: $white
+            h2
+                font: 400 14px $head-font  
+            span
+                font: 400 30px $first-font         
+        .item
+            width: 50%
+            border: 1px solid $gray
+            
+            img
+                padding: 25px 15px 5px 
+            a
+                text-decoration: none
+                display: block
+                width: 100%
+                height: 100%
+                background-color: $light-blue
+                padding: 15px 12px 15px 12px
+                color: $white
+                &:hover
+                    background-color: $blue
+            .title
+                padding: 0 15px
+                flex-wrap: wrap
+                h3
+                    font: 700 14px $head-font
+                    text-transform: uppercase
+                    margin-top: 11px
+                    
+                .fa-chevron-right
+                    border: 2px solid $white
+                    border-radius: 50%
+                    padding: 3px 7px
+                    width: 25px
+                    height: 25px                
+        .item-btn
+            width: 50%
+            background-color: $light-blue    
+            .btn
+                display: block
+                font: 400 13px $head-font
+                text-transform: uppercase
+                padding: 15px 45px
+                margin: 25px
+                letter-spacing: -0.13px
+                color: $white
+                background-color: $green
+                border-radius: 25px
+                outline: none
+                border: 2px solid transparent
+                &:hover
+                    border: 2px solid $green
+                    color: $green
+                    background-color: $white
+                    transition: .4s ease all
+#about
+    padding: 90px 0
+    .about-description  
+        p
+            margin: 20px 0 
+            font: 400 15px $second-font
+            line-height: 28px
+            color: $gray
+        .btn
+            display: inline-block
+            font: 400 13px $head-font
+            text-transform: uppercase
+            padding: 15px 25px
+            letter-spacing: -0.13px
+            color: $white
+            background-color: $green
+            border-radius: 25px
+            outline: none
+            border: 2px solid transparent
+            &:hover
+                border: 2px solid $green
+                color: $green
+                background-color: $white
+                transition: .4s ease all
+    .badge
+        max-width: 237px
+        padding: 18px 
+        margin-top: 30px
+        text-transform: uppercase
+        color: $white
+        background-color: $light-blue
+        border: 5px solid $white
+        img
+            padding: 0 35px 
+        .solid-wrapper
+            border: 1px solid $white
+            span
+                font: 400 4.688rem $head-font
+                letter-spacing: -3.75px
+            p
+                font: 700 0.625rem $head-font
+                padding-bottom: 10px
+                letter-spacing: 1px
+#our-steps
+    background-color: $bgc
+    padding: 90px 0
+    .deck
+        padding-top: 28px
+        justify-content: space-between
+        margin: 0
+        .item
+            padding: 0
+            h4
+                padding: 33px 0 10px 0
+                color: $green
+                font: 700 1.25rem $head-font
+            h3
+                text-transform: uppercase
+                font: 700 1.125rem $boldhead-font
+                letter-spacing: -0.9px
+                line-height: 33px
+            p
+                font: 400 0.9375rem $second-font
+                line-height: 28px
+                color: $gray
+#feature-projects
+    padding: 95px 0
+    h2
+        font: 400 14px $head-font
+        text-transform: uppercase
+        padding: 0
+        margin: 0
+        color: $gray
+    h3
+        font: 400 12px $boldhead-font
+        text-transform: uppercase
+        color: $white
+    h4
+        display: inline
+        position: absolute
+        padding: 5px 20px
+        top: 5%
+        left: 5% 
+        font: 400 12px $boldhead-font
+        text-transform: uppercase
+        color: $white
+        border: 2px solid $orange
+        border-radius: 25px
+    p
+        font: 400 15px $second-font
+        color: $white
+    .project-item
+        position: relative
+        .project-corner
+            position: absolute
+            bottom: 0
+            left: 0
+            width: 0
+            height: 0
+            border-bottom: 56px solid $blue
+            border-right: 56px solid transparent
+            color: $white
+            z-index: 5
+            &:hover 
+                border-bottom-color: $orange
+                transition: all .4s ease-in
+                cursor: pointer
+            i
+                position: absolute
+                bottom: -45px
+                left: 10px
+        .project-overlay 
+            position: absolute
+            background-color: $orange
+            top: 0
+            right: 0
+            bottom: 0
+            left: 0
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            opacity: 0
+            transition: all 0.4s ease-in-out
+            z-index: -1
+            color: $white
+            text-align: center
+        .none
+            opacity: 1
+            transition: all 0.4s ease-in-out
+            z-index: 1
+    span
+        font: 700 32px $boldhead-font
+        text-transform: uppercase
+        letter-spacing: -0.7px        
+    .btn-2
+        display: inline-block
+        font: 700 13px $head-font
+        text-transform: uppercase
+        text-decoration: none
+        padding: 15px 25px
+        letter-spacing: -0.13px
+        color: $white
+        background-color: $green
+        border-radius: 25px
+        outline: none
+        border: 2px solid transparent
+        &:hover
+            border: 2px solid $green
+            color: $green
+            background-color: $white
+            transition: .4s ease all
+#testimonials
+    padding: 95px 0
+    background-color: $light-blue
+    color: $white
+    h2
+        font: 400 14px $head-font
+        text-transform: uppercase
+        padding: 0
+        margin: 0
+    span
+        font: 700 32px $boldhead-font
+        text-transform: uppercase
+        letter-spacing: -0.7px
+    p
+        font: 400 15px $second-font
+        line-height: 28px
+    .testimonials-description
+        position: relative
+        padding-top: 57px
+        &::after
+            position: absolute
+            content: ''
+            width: 3%
+            height: 2px
+            background-color: $white
+            top: 90%
+            left: 13%
+    .carousel-indicators 
+        justify-content: space-between
+        position: static
+        margin: 0
+        .indicator-item 
+            text-indent: 0
+            width: auto
+            height: auto
+            margin: 0
+            background: none
+            border: 0
+            .title-wrapper
+                h3
+                    font: 700 14px $boldhead-font
+                    text-transform: uppercase
+            img
+                max-width: 67px
+                max-height: 67px
+                object-fit: cover
+                border-radius: 50%
+            .inner-pagination
+                li
+                    width: 15px
+                    height: 15px
+                    color: $white
+                    background-color: $green
+                    border: 2px solid $white
+                    border-radius: 50%
+#our-blog 
+    position: relative
+    background-color: $bgc
+    .posts
+        .post-links
+            padding: 3% 0
+            .post-time
+                font: 400 0.9375rem $second-font
+                line-height: 28px
+                span
+                    color: $green
+            .post-title
+                line-height: 33px
+                font: 700 1.125rem $boldhead-font
+                padding: 0.2rem 0
+            .item-link
+                text-decoration: none
+                color: $black
+                &:hover
+                    color: $orange
+            p
+                font: 400 0.9375rem $second-font
+                color: $gray
+                line-height: 28px
+#contact-us
+    padding: 90px 0
+    .card-deck
+        margin-top: 33px
+        li  
+            border: 1px solid $border
+            padding: 30px
+            img
+                padding: 5px  
+            span
+                display: block
+                font: 700 1.125rem $boldhead-font 
+                letter-spacing: -0.9px
+                color: $dark
+            a
+                font: 400 1.125rem $second-font
+                line-height: 28px
+                text-decoration: none
+                color: $dark
+                &:hover
+                    color: $orange
+#page-wrapper
+    .site-main
+        .post-card
+            .post-title
+                display: inline-block
+                font: 700 1.125rem $head-font
+                letter-spacing: -0.9px
+                background-color: $black
+                color: $white
+                padding: 15px
+            .post-time
+                font: 700 0.9375rem $head-font
+                text-transform: uppercase
+                color: $white
+                background-color: $orange
+                padding: 5px 15px
+            p
+                font: 400 0.9375rem $second-font
+                line-height: 28px
+                color: $gray
+            .read-more-btn
+                font: 400 0.875rem $head-font
+                text-transform: uppercase
+                letter-spacing: -0.13px
+                padding: 15px 45px
+                color: $white
+                background-color: $green
+                border-radius: 35px
+                border: 2px solid transparent
+                &:hover
+                    color: $green
+                    background-color: transparent
+                    border: 2px solid $green
+#right-sidebar
+    .widget-title
+        text-transform: uppercase
+        font: 700 1.125rem $boldhead-font
+        margin-bottom: 3%
+    .widget_search
+        padding: 5% 0
+    .widget_tag_cloud
+        padding: 5% 0
+        .tagcloud
+            a
+                color: $black
+                text-decoration: none
+                text-transform: uppercase
+                font: 400 0.875rem $boldhead-font
+    .popular-posts
+        .wpp-list
+            margin: 5% 0
+            a
+                padding: 3px 5px
+                color: $black
+                text-decoration: none
+                &:hover
+                    color: $orange
+            li
+                .wpp-post-title
+                    text-transform: uppercase
+                    font: 400 0.875rem $boldhead-font
+                .post-stats
+                    margin-left: 5px
+                    color: $orange
+                    text-transform: uppercase
+                    font: 400 0.75rem $boldhead-font
+    .custom-html-widget
+        border: 1px solid $border
+        text-align: center
+        padding: 10% 8%
+        span
+            text-transform: uppercase
+            font: 400 0.875rem $boldhead-font
+        h3
+            text-transform: uppercase
+            font: 700 1.125rem $boldhead-font
+        .mailchimp
+            padding: 10px 0
+            .name
+                border: 1px solid $border
+                font: 400 1.25rem $second-font
+                padding: 5% 6%
+                width: 85%
+            .email
+                font: 400 1.25rem $second-font
+                border: 1px solid $border
+                padding: 5% 6%
+                margin: 7px 0 13px 0
+                width: 85%
+            .formEmailButton
+                font: 400 0.875rem $head-font
+                text-transform: uppercase
+                letter-spacing: -0.13px
+                padding: 5% 0
+                color: $white
+                background-color: $green
+                border-radius: 75px
+                border: 2px solid transparent
+                width: 85%
+                &:hover
+                    color: $green
+                    background-color: transparent
+                    border: 2px solid $green
+                    
+        
+
+
