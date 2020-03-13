@@ -1,7 +1,8 @@
 <?php
 /*
 Template Name: Single Project Page
-Template Post Type: specializations
+The template for displaying all single posts.
+Template Post Type: specializations, post, page
 */
 defined('ABSPATH') || exit;
 get_header();
